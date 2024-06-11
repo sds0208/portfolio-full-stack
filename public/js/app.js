@@ -1,0 +1,1 @@
+// document.querySelector('body').addEventListener('click', () => alert('clicked body!'));
