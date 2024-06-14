@@ -1,0 +1,26 @@
+.experience-blocks {
+  min-width: 100%;
+  flex-wrap: wrap;
+
+  .experience-block {
+    width: calc(50% - $space-small);
+    border-top: 3px solid $med-color;
+    border-radius: 8px;
+    padding: $space-medium;
+    margin-bottom: $space-medium;
+    background: linear-gradient(to bottom right, $dark-color, $med-dark-color, $med-color);
+
+    h3 {
+      margin: 0 0 5px;
+    }
+
+    p {
+      margin: 5px 0 $space-medium;
+    }
+
+    &:nth-child(odd) {
+      margin-right: $space-medium;
+      background: linear-gradient(to bottom left, $dark-color, $med-dark-color, $med-color);
+    }
+  }
+}

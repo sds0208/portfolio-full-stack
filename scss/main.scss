@@ -1,0 +1,67 @@
+@import 'base';
+@import 'nav';
+@import 'hero';
+@import 'experience';
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+  color: $white-color;
+  cursor: pointer;
+  transition: all 750ms;
+
+  &:hover {
+    color: $light-color;
+  }
+}
+
+p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.highlight {
+  color: $light-color;
+}
+
+.flex-space-between-row {
+  @include flex-space-between-row();
+}
+
+.flex-center-row {
+  @include flex-center-row();
+}
+
+.flex-left-row {
+  @include flex-left-row();
+}
+
+.flex-center-column {
+  @include flex-center-column();
+}
+
+body {
+  background: $dark-color;
+  color: $white-color;
+  margin: 0;
+  z-index: -5;
+
+  &.mobile-nav-open {
+    overflow: hidden;
+  }
+
+  section {
+    margin: $space-xl auto;
+    padding: 0 $space-xl;
+    max-width: 1200px;
+  }
+}
+
+.headshot-img {
+  width: 200px;
+}

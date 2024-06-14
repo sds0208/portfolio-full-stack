@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const experienceData = require('./data/experience');
+
 
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
@@ -9,7 +11,7 @@ app.use('/images', express.static(__dirname + 'public/images'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {experienceData: experienceData.experience});
 });
 
 const aboutRouter = require('./routes/about');

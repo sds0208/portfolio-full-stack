@@ -1,0 +1,95 @@
+nav {
+  background: $med-dark-color;
+  padding: 10px 40px;
+
+  #nav-logo {
+    font-family: 'Rock Salt', 'cursive';
+    font-size: 28px;
+  }
+
+  .nav-links {
+    // display: flex;
+  }
+
+  .nav-link {
+    &:not(:last-child) {
+      margin-right: 20px;
+
+    &.selected {
+      border-bottom: 1px dotted $light-color;
+      }
+    }
+  }
+
+  @include mobile {
+    .hamburger {
+      position: absolute;
+      right: 30px;
+      cursor: pointer;
+      z-index: 5;
+
+      .hamburger-line {
+        width: 16px;
+        height: 2px;
+        margin: 3px;
+        background: $white-color;
+        transition: transform 200ms, opacity 100ms, background 750ms;
+      }
+
+      &:hover .hamburger-line {
+        background: $light-color;
+      }
+    }
+
+    .nav-links {
+      @include flex-center-column;
+      visibility: hidden;
+      width: 150px;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $dark-color;
+      height: 0;
+      width: 100%;
+      transition: height 1s, opacity 200ms;
+      padding: $space-small 0;
+
+      
+
+      .nav-link {
+        margin: $space-small 0;
+        text-align: center;
+      }
+    }
+
+    &:not(.open) .nav-links {
+      // transition: height 1s;
+    }
+
+    &.open {
+
+      .nav-links {
+        opacity: 1.0;
+        height: 100vh;
+        visibility: visible;
+        // transition: height 1s, opacity 1s;
+      }
+
+      .hamburger-line {
+        
+        &.line-1 {
+          transform: rotate(45deg) translate(4px, 4px);
+        }
+
+        &.line-2 {
+          opacity: 0;
+        }
+
+        &.line-3 {
+          transform: rotate(-45deg) translate(3px, -3px);
+        }
+      }
+    }
+  }
+}

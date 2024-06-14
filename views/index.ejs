@@ -7,15 +7,15 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <%- include('./partials/nav', {'page':'home'}); %>
+  <%- include('./partials/sections/nav', {'page':'home'}); %>
   <section id="hero">
-    <h1>HERO GOES HERE.</h1>
+    <%- include('./partials/sections/hero'); %>
   </section>
   <section id="homepage-blurb">
-    Blurb below the hero goes here.
+    <%- include('./partials/sections/blurb'); %>
   </section>
   <section id="work-experience">
-    Work experience section goes here!
+    <%- include('./partials/sections/experience', {experienceData: experienceData}); %>
   </section>
   <section id="skills">
     Skills section goes here!
