@@ -1,7 +1,9 @@
 @import 'base';
 @import 'nav';
 @import 'hero';
+@import 'blurb';
 @import 'experience';
+@import 'skills';
 
 * {
   font-family: 'Josefin Sans', sans-serif;
@@ -25,8 +27,32 @@ p {
   line-height: 24px;
 }
 
+// a.button-wrapper {
+
+  button {
+    padding: $space-small;
+    background: $med-color;
+    border-radius: 8px;
+    border: 1px solid $light-color;
+    cursor: pointer;
+    transition: all 750ms;
+    color: $white-color;
+  
+    &:hover {
+      background: $light-color;
+      color: $dark-color;
+    }
+  }
+// }
+
 .highlight {
   color: $light-color;
+}
+
+.material-symbols-outlined {
+  color: #b8ccfc;
+  font-size: 100px; 
+  margin-right: $space-medium;
 }
 
 .flex-space-between-row {
@@ -59,6 +85,11 @@ body {
     margin: $space-xl auto;
     padding: 0 $space-xl;
     max-width: 1200px;
+
+    @include mobile {
+      padding: 0 $space-medium;
+      margin: $space-large auto;
+    }
   }
 }
 

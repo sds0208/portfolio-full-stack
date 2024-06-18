@@ -1,12 +1,15 @@
-<div class="experience-block">
+<div class="experience-block flex-left-row">
+  <div class="experience-icon">
+    <img src="<%=`images/${item.imgPath}`%>" alt="company logo">
+    <!-- <span class="material-symbols-outlined">
+      terminal
+    </span> -->
+  </div>
   <div class="experience-info">
-    <div class="experience-icon">
-      
-    </div>
     <div class="experience-text">
       <h3><%= item.name %></h3>
-    <p><%= item.title %></p>
+      <p><%= item.title %></p>
     </div>
+    <a class="button-wrapper" href=""><button class="learn-more">Learn More</button></a>
   </div>
-  <button><a href="">Learn More</a></button>
 </div>

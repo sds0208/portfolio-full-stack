@@ -5,6 +5,10 @@ nav {
   #nav-logo {
     font-family: 'Rock Salt', 'cursive';
     font-size: 28px;
+
+    .highlight {
+      font-size: 44px;
+    }
   }
 
   .nav-links {
@@ -26,7 +30,7 @@ nav {
       position: absolute;
       right: 30px;
       cursor: pointer;
-      z-index: 5;
+      z-index: 15;
 
       .hamburger-line {
         width: 16px;
@@ -54,6 +58,7 @@ nav {
       width: 100%;
       transition: height 1s, opacity 200ms;
       padding: $space-small 0;
+      z-index: 10;
 
       
 

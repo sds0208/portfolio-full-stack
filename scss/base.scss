@@ -15,6 +15,14 @@ $space-xl: 80px;
   @media (max-width: 480px) { @content; }
 }
 
+@mixin desktop-small {
+  @media (max-width: 1024px) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) { @content; }
+}
+
 @mixin flex-center-column {
   display: flex;
   flex-direction: column;
