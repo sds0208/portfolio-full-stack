@@ -267,6 +267,12 @@ nav .nav-link:not(:last-child).selected {
 #projects .project-container .project-block:nth-child(even) {
   flex-direction: row-reverse;
 }
+#projects .project-container .project-block:nth-child(even) .info-container {
+  margin-left: -10%;
+}
+#projects .project-container .project-block:nth-child(even) .info-container > :not(.description) {
+  text-align: right;
+}
 #projects .project-container .project-block:nth-child(even) .image-container {
   margin-right: 40px;
   margin-left: 0;
@@ -274,6 +280,9 @@ nav .nav-link:not(:last-child).selected {
 #projects .project-container .project-block:nth-child(even) .image-container img {
   margin-right: 10%;
   margin-left: 0;
+}
+#projects .project-container .project-block:nth-child(even) .img-background {
+  left: 0;
 }
 #projects .project-container .project-block .info-container {
   min-width: 60%;

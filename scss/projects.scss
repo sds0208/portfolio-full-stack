@@ -9,6 +9,14 @@
             &:nth-child(even) {
                 flex-direction: row-reverse;
 
+                .info-container {
+                    margin-left: -10%;
+
+                    > :not(.description) {
+                        text-align: right;
+                    }
+                }
+
                 .image-container {
                     margin-right: $space-large;
                     margin-left: 0;
@@ -18,20 +26,20 @@
                         margin-left: 0;
                     }
                 }
+
+                .img-background {
+                    left: 0;
+                }
             }
 
             .info-container {
-                // min-width: calc(50% - $space-large);
-                // max-width: calc(50% - $space-large);
                 min-width: 60%;
                 max-width: 60%;
-                // position: absolute;
                 margin-right: -10%;
                 z-index: 10;
 
                 .description {
                     z-index: 20;
-                    // height: 150px;
                     position: relative;
 
                     p {
