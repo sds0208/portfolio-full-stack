@@ -33,8 +33,9 @@ p {
   button {
     padding: $space-small;
     background: $med-color;
+    // background: transparent;
     border-radius: 8px;
-    border: 1px solid $light-color;
+    border: 1px solid $white-color;
     cursor: pointer;
     transition: all 750ms;
     color: $white-color;
@@ -42,6 +43,7 @@ p {
     &:hover {
       background: $light-color;
       color: $dark-color;
+      border-color: $light-color;
     }
   }
 // }

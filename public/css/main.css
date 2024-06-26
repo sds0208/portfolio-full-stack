@@ -4,17 +4,17 @@ nav {
   padding: 10px 40px;
 }
 nav #nav-logo {
-  font-family: "Rock Salt", "cursive";
+  font-family: monospace;
   font-size: 28px;
 }
 nav #nav-logo .highlight {
-  font-size: 44px;
+  font-family: monospace;
 }
 nav .nav-link:not(:last-child) {
   margin-right: 20px;
 }
 nav .nav-link:not(:last-child).selected {
-  border-bottom: 1px dotted #b8ccfc;
+  border-bottom: 1px dotted #00FFFF;
 }
 @media (max-width: 480px) {
   nav .hamburger {
@@ -31,7 +31,7 @@ nav .nav-link:not(:last-child).selected {
     transition: transform 200ms, opacity 100ms, background 750ms;
   }
   nav .hamburger:hover .hamburger-line {
-    background: #b8ccfc;
+    background: #00FFFF;
   }
   nav .nav-links {
     display: flex;
@@ -93,9 +93,13 @@ nav .nav-link:not(:last-child).selected {
 }
 #hero .intro {
   font-size: 24px;
+  font-family: monospace;
+}
+#hero .intro .highlight {
+  font-family: monospace;
 }
 #hero .intro .blinking-cursor {
-  animation: 1s blink 3s step-end infinite;
+  animation: 1s blink 500ms step-end infinite;
 }
 #hero .img-container {
   position: relative;
@@ -135,11 +139,14 @@ nav .nav-link:not(:last-child).selected {
   }
 }
 
-.experience-blocks {
+#work-experience {
+  margin-bottom: 120px;
+}
+#work-experience .experience-blocks {
   min-width: 100%;
   flex-wrap: wrap;
 }
-.experience-blocks .experience-block {
+#work-experience .experience-blocks .experience-block {
   width: calc(50% - 10px);
   border-top: 3px solid #032a8c;
   border-radius: 8px;
@@ -147,32 +154,32 @@ nav .nav-link:not(:last-child).selected {
   margin-bottom: 20px;
   background: linear-gradient(to bottom right, #0a1633, #021b5c, #032a8c);
 }
-.experience-blocks .experience-block img {
+#work-experience .experience-blocks .experience-block img {
   height: 80px;
   margin-right: 20px;
 }
-.experience-blocks .experience-block h3 {
+#work-experience .experience-blocks .experience-block h3 {
   margin: 0 0 5px;
 }
-.experience-blocks .experience-block p {
+#work-experience .experience-blocks .experience-block p {
   margin: 5px 0 20px;
 }
-.experience-blocks .experience-block:nth-child(odd) {
+#work-experience .experience-blocks .experience-block:nth-child(odd) {
   margin-right: 20px;
   background: linear-gradient(to bottom left, #0a1633, #021b5c, #032a8c);
 }
 @media (max-width: 1024px) {
-  .experience-blocks {
+  #work-experience .experience-blocks {
     flex-direction: column;
   }
-  .experience-blocks .experience-block {
+  #work-experience .experience-blocks .experience-block {
     width: 100%;
     display: flex;
   }
-  .experience-blocks .experience-block:nth-child(odd) {
+  #work-experience .experience-blocks .experience-block:nth-child(odd) {
     margin-right: 0;
   }
-  .experience-blocks .experience-block .experience-info {
+  #work-experience .experience-blocks .experience-block .experience-info {
     width: calc(100% - 80px);
     display: flex;
     align-items: center;
@@ -180,18 +187,18 @@ nav .nav-link:not(:last-child).selected {
   }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
-  .experience-blocks .experience-block .experience-info {
+  #work-experience .experience-blocks .experience-block .experience-info {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 @media (max-width: 1024px) {
-  .experience-blocks .experience-block .experience-info .experience-text {
+  #work-experience .experience-blocks .experience-block .experience-info .experience-text {
     padding-top: 25px;
   }
 }
 @media (max-width: 1024px) and (max-width: 768px) {
-  .experience-blocks .experience-block .experience-info .experience-text {
+  #work-experience .experience-blocks .experience-block .experience-info .experience-text {
     padding-top: 0;
   }
 }
@@ -208,7 +215,7 @@ nav .nav-link:not(:last-child).selected {
   position: absolute;
   width: 100%;
   height: 140px;
-  background: #b8ccfc;
+  background: #00FFFF;
   opacity: 0.2;
 }
 @keyframes loop-1 {
@@ -260,18 +267,26 @@ nav .nav-link:not(:last-child).selected {
   font-size: 60px;
 }
 
+#projects {
+  margin-top: 0;
+}
 #projects .project-container .project-block {
-  padding: 80px 0;
+  padding: 80px 0 160px;
   position: relative;
 }
 #projects .project-container .project-block:nth-child(even) {
   flex-direction: row-reverse;
+  margin-left: -5%;
+  margin-right: 5%;
 }
 #projects .project-container .project-block:nth-child(even) .info-container {
   margin-left: -10%;
 }
 #projects .project-container .project-block:nth-child(even) .info-container > :not(.description) {
   text-align: right;
+}
+#projects .project-container .project-block:nth-child(even) .info-container > :not(.description).button-wrapper {
+  float: right;
 }
 #projects .project-container .project-block:nth-child(even) .image-container {
   margin-right: 40px;
@@ -290,6 +305,12 @@ nav .nav-link:not(:last-child).selected {
   margin-right: -10%;
   z-index: 10;
 }
+#projects .project-container .project-block .info-container .eyebrow-text {
+  color: #00FFFF;
+}
+#projects .project-container .project-block .info-container h3 {
+  margin-top: 10px;
+}
 #projects .project-container .project-block .info-container .description {
   z-index: 20;
   position: relative;
@@ -306,7 +327,7 @@ nav .nav-link:not(:last-child).selected {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #b8ccfc;
+  background: #fff;
   opacity: 0.9;
   border-radius: 8px;
 }
@@ -326,7 +347,7 @@ nav .nav-link:not(:last-child).selected {
 #projects .project-container .project-block .img-background {
   position: absolute;
   width: 70%;
-  height: calc(100% + 80px);
+  height: 100%;
   background: radial-gradient(#032a8c, #021b5c, #0a1633, #0a1633);
   bottom: 0;
   right: 0;
@@ -345,7 +366,7 @@ nav .nav-link:not(:last-child).selected {
   transition: all 750ms;
 }
 .link:hover {
-  color: #b8ccfc;
+  color: #00FFFF;
 }
 
 p {
@@ -358,18 +379,19 @@ button {
   padding: 10px;
   background: #032a8c;
   border-radius: 8px;
-  border: 1px solid #b8ccfc;
+  border: 1px solid #fff;
   cursor: pointer;
   transition: all 750ms;
   color: #fff;
 }
 button:hover {
-  background: #b8ccfc;
+  background: #00FFFF;
   color: #0a1633;
+  border-color: #00FFFF;
 }
 
 .highlight {
-  color: #b8ccfc;
+  color: #00FFFF;
 }
 
 .material-symbols-outlined {

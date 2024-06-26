@@ -3,11 +3,13 @@ nav {
   padding: 10px 40px;
 
   #nav-logo {
-    font-family: 'Rock Salt', 'cursive';
+    // font-family: 'Rock Salt', 'cursive';
+    font-family: monospace;
     font-size: 28px;
 
     .highlight {
-      font-size: 44px;
+      // font-size: 44px;
+      font-family: monospace;
     }
   }
 

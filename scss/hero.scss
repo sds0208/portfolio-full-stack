@@ -22,10 +22,15 @@
 
   .intro {
     font-size: 24px;
+    font-family: monospace;
+
+    .highlight {
+      font-family: monospace;
+    }
 
     .blinking-cursor {
       // color: transparent;
-      animation: 1s blink 3s step-end infinite;
+      animation: 1s blink 500ms step-end infinite;
     }
   }
 
