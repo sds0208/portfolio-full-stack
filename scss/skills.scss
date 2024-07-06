@@ -5,6 +5,11 @@
     overflow: hidden;
     width: 100%;
     height: 140px;
+    white-space: nowrap;
+
+    @include desktop-small {
+        
+    }
 
     .skills-overlay {
         position: absolute;
@@ -29,6 +34,7 @@
         align-items: center;
         justify-content: space-around;
         width: fit-content;
+        white-space: nowrap;
         position: absolute;
         top: 0;
         left: 0;

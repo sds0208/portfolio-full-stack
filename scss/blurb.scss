@@ -1,9 +1,20 @@
 #homepage-blurb {
 
     .blurb-container {
-        margin-left: -100vw;
-        animation: 2s slide-right 1s ease-in-out forwards;
+        // margin-left: -100vw;
+        // animation: 2s slide-right 1s ease-in-out forwards;
         width: 100%;
+
+        animation: fade-in 1500ms;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     @keyframes slide-right {

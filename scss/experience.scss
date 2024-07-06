@@ -12,6 +12,7 @@
       padding: $space-medium;
       margin-bottom: $space-medium;
       background: linear-gradient(to bottom right, $dark-color, $med-dark-color, $med-color);
+      opacity: 0;
   
       img {
         height: 80px;
@@ -29,6 +30,28 @@
       &:nth-child(odd) {
         margin-right: $space-medium;
         background: linear-gradient(to bottom left, $dark-color, $med-dark-color, $med-color);
+      }
+
+      &:nth-child(1) {
+        animation: 500ms fade-in 150ms forwards; 
+      }
+      &:nth-child(2) {
+        animation: 500ms fade-in 300ms forwards; 
+      }
+      &:nth-child(3) {
+        animation: 500ms fade-in 450ms forwards; 
+      }
+      &:nth-child(4) {
+        animation: 500ms fade-in 600ms forwards; 
+      }
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
     }
   

@@ -5,6 +5,7 @@
 @import 'experience';
 @import 'skills';
 @import 'projects';
+@import 'contact';
 
 * {
   font-family: 'Josefin Sans', sans-serif;
@@ -31,14 +32,14 @@ p {
 // a.button-wrapper {
 
   button {
-    padding: $space-small;
+    padding: 12px $space-small $space-small;
     background: $med-color;
-    // background: transparent;
     border-radius: 8px;
     border: 1px solid $white-color;
     cursor: pointer;
     transition: all 750ms;
     color: $white-color;
+    font-size: 16px;
   
     &:hover {
       background: $light-color;
