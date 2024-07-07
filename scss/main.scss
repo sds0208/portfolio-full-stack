@@ -29,34 +29,29 @@ p {
   line-height: 24px;
 }
 
-// a.button-wrapper {
+li {
+  line-height: 1.3em;
+}
 
-  button {
-    padding: 12px $space-small $space-small;
-    background: $med-color;
-    border-radius: 8px;
-    border: 1px solid $white-color;
-    cursor: pointer;
-    transition: all 750ms;
-    color: $white-color;
-    font-size: 16px;
-  
-    &:hover {
-      background: $light-color;
-      color: $dark-color;
-      border-color: $light-color;
-    }
+button {
+  padding: 12px $space-small $space-small;
+  background: $med-color;
+  border-radius: 8px;
+  border: 1px solid $white-color;
+  cursor: pointer;
+  transition: all 750ms;
+  color: $white-color;
+  font-size: 16px;
+
+  &:hover {
+    background: $light-color;
+    color: $dark-color;
+    border-color: $light-color;
   }
-// }
+}
 
 .highlight {
   color: $light-color;
-}
-
-.material-symbols-outlined {
-  color: #b8ccfc;
-  font-size: 100px; 
-  margin-right: $space-medium;
 }
 
 .flex-space-between-row {

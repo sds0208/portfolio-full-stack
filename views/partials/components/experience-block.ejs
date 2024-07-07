@@ -1,12 +1,21 @@
-<div class="experience-block flex-left-row">
-  <div class="experience-icon">
+<div class="experience-wrapper">
+  <div class="experience-block flex-left-row">
     <img src="<%=`images/${item.imgPath}`%>" alt="company logo">
-  </div>
-  <div class="experience-info">
-    <div class="experience-text">
-      <h3><%= item.name %></h3>
-      <p><%= item.title %></p>
+    <div class="experience-info">
+      <div class="experience-text">
+        <h3><%= item.name %></h3>
+        <p class="job-title"><%= item.title %></p>
+        <p class="job-dates"><%= item.dates %></p>
+        <ul class="job-list-items">
+          <% for (listItem of item.listItems) { %>
+            <li><%= listItem %></li>
+          <% } %>
+        </ul>
+      </div>
+      <a class="button-wrapper" href="/static/sarah-santa-cruz-resume.pdf" target="_blank"><button class="learn-more">View Resume</button></a>
     </div>
-    <a class="button-wrapper" href=""><button class="learn-more">More Details</button></a>
+    <span class="material-symbols-outlined experience-caret">
+      expand_circle_down
+    </span>
   </div>
 </div>

@@ -47,3 +47,27 @@ interval = setInterval(() => {
     introStr1Counter++;
   }
 }, 100);
+
+// Experience expand/collapse
+document.querySelectorAll('.experience-caret').forEach(item => {
+  item.addEventListener('click', (e) => {
+    item.closest('.experience-blocks').querySelectorAll('.experience-block')
+      .forEach(block => {
+        // Collapse all but the clicked block
+        if (block !== item.closest('.experience-block')) {
+          block.classList.remove('expanded');
+        // Toggle expand/collapse state of clicked block
+        } else {
+          block.classList.toggle('expanded');
+        }
+    });
+    
+    // If there's an expanded block add expanded class to parent container
+    if (!!document.querySelector('.experience-block.expanded')) {
+      item.closest('.experience-blocks').classList.add('expanded');
+    // If not, remove expanded class
+    } else {
+      item.closest('.experience-blocks').classList.remove('expanded');
+    }
+  });
+});
