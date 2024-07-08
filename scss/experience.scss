@@ -28,7 +28,6 @@
       background: linear-gradient(to bottom right, $dark-color, $med-dark-color, $med-color);
       opacity: 0;
       position: relative;
-      // transition: height 2s;
   
       img {
         height: 80px;
@@ -45,6 +44,8 @@
 
       ul.job-list-items {
         padding-bottom: 4px;
+        max-height: 0;
+        transition: max-height 3s, opacity 1s;
 
         li {
           font-weight: 300;
@@ -81,8 +82,8 @@
           margin: $space-small auto; 
         }
 
-        p.job-dates,
-        ul.job-list-items {
+        p.job-dates/*,
+        ul.job-list-items*/ {
           // opacity: 1;
           transition: opacity 1s;
         }
@@ -94,6 +95,8 @@
         ul.job-list-items {
           padding-inline-start: $space-medium;
           margin-top: $space-large;
+          max-height: 3000px;
+          transition: max-height 3s, opacity 1s;
         }
 
         .experience-caret {

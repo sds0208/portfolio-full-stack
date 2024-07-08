@@ -279,6 +279,8 @@ body section {
 }
 #work-experience .experience-blocks .experience-block ul.job-list-items {
   padding-bottom: 4px;
+  max-height: 0;
+  transition: max-height 3s, opacity 1s;
 }
 #work-experience .experience-blocks .experience-block ul.job-list-items li {
   font-weight: 300;
@@ -309,8 +311,7 @@ body section {
   text-align: center;
   margin: 10px auto;
 }
-#work-experience .experience-blocks .experience-block.expanded p.job-dates,
-#work-experience .experience-blocks .experience-block.expanded ul.job-list-items {
+#work-experience .experience-blocks .experience-block.expanded p.job-dates {
   transition: opacity 1s;
 }
 #work-experience .experience-blocks .experience-block.expanded a.button-wrapper {
@@ -319,6 +320,8 @@ body section {
 #work-experience .experience-blocks .experience-block.expanded ul.job-list-items {
   padding-inline-start: 20px;
   margin-top: 40px;
+  max-height: 3000px;
+  transition: max-height 3s, opacity 1s;
 }
 #work-experience .experience-blocks .experience-block.expanded .experience-caret {
   transform: rotate(-180deg);
