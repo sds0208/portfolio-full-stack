@@ -27,3 +27,5 @@ app.use('/projects', projectRouter);
 
 
 app.listen(3000);
+
+process.on('SIGINT', () => process.exit(0));

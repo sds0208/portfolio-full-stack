@@ -1,0 +1,32 @@
+@import '../main';
+@import '../projects';
+
+.project-page-wrapper {
+  padding: $space-xl;
+
+  .project-container {
+
+    .project-blocks {
+
+      .project-block {
+
+        .featured-text {
+          display: none;
+        }
+
+        .button-wrapper {
+          display: none;
+        }
+
+        .link-group a {
+          color: $light-color;
+          margin-right: $space-small;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

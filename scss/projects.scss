@@ -1,4 +1,20 @@
-#projects {
+#projects, .project-page-wrapper {
+
+    &#projects {
+    
+        .project-container {
+    
+            .project-blocks {
+        
+              	.project-block {
+                
+                	.link-group {
+                  		display: none;
+                	}
+              	}
+            }
+        }
+    }
 
     margin-top: 0;
 
@@ -99,7 +115,7 @@
                 }
             }
 
-            .button-wrapper {
+            .button-wrapper, .link-group {
 
                 &.lg-screen {
                     display: block;
@@ -185,7 +201,6 @@
             }
 
             .img-background {
-                // display: none !important;
                 position: absolute;
                 width: 70%;
                 height: calc(100%);

@@ -13,17 +13,14 @@ nav {
     }
   }
 
-  .nav-links {
-    // display: flex;
-  }
-
   .nav-link {
-    &:not(:last-child) {
-      margin-right: 20px;
 
     &.selected {
       border-bottom: 1px dotted $light-color;
-      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
     }
   }
 
@@ -68,10 +65,6 @@ nav {
         margin: $space-small 0;
         text-align: center;
       }
-    }
-
-    &:not(.open) .nav-links {
-      // transition: height 1s;
     }
 
     &.open {

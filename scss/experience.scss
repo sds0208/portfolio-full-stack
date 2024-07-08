@@ -137,29 +137,6 @@
   
       .experience-block {
 
-        // &.expanded {
-          // flex-direction: column;
-
-          // .experience-icon {
-
-          //   img {
-          //     margin-right: 0;
-          //     margin-bottom: $space-small;
-          //   }
-          // }
-
-          // h3, p.job-title, p.job-dates, a.button-wrapper {
-          //   text-align: center;
-          //   margin: $space-small auto; 
-          //   // width: auto;
-          // }
-
-          // ul.job-list-items {
-          //   padding-inline-start: 0;
-          //   // margin-top: $space-large;
-          // }
-        // }
-
         &:not(.expanded) p.job-title {
           @include tablet {
             max-width: 150px;
@@ -173,7 +150,7 @@
           align-items: flex-start;
   
           .experience-text {
-            padding-top: 25px;
+            // padding-top: 25px;
   
             @include tablet {
               padding-top: 0;

@@ -6,7 +6,7 @@
   <title>Sarah Santa Cruz - Full Stack Engineer</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
   <%- include('./partials/sections/nav', {'page':'home'}); %>
@@ -26,7 +26,7 @@
     An interesting visual element will go here...
   </section> -->
   <section id="projects">
-    <%- include('./partials/sections/projects', {projectData: projectData}); %>
+    <%- include('./partials/sections/projects', {projectData: projectData, page: 'home'}); %>
   </section>
   <section id="contact">
     <%- include('./partials/sections/contact'); %>
