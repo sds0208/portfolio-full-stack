@@ -21,16 +21,17 @@ app.get('/', (req, res) => {
   });
 });
 
+// TODO - send to database
 app.post('/analytics/view', (req, res) => {
   console.log(req.body.count);
   res.send('View count incremented');
 });
 
+// TODO - send to database
 app.post('/analytics/click', (req, res) => {
   console.log(req.body.text);
   res.send('Click data sent');
 });
-
 
 app.listen(3000);
 
