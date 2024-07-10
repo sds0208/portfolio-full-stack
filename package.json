@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js & npm run scss",
-    "scss": "rm public/css/* & sass --watch scss/main-page-styles:public/css"
+    "scss": "sass --watch scss/main-page-styles:public/css"
   },
   "keywords": [],
   "author": "",
