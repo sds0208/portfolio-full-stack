@@ -3,7 +3,6 @@ const app = express();
 const experienceData = require('./data/experience');
 const projectData = require('./data/projects');
 
-
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
 app.use('/js', express.static(__dirname + 'public/js'));
@@ -33,6 +32,6 @@ app.post('/analytics/click', (req, res) => {
   res.send('Click data sent');
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 process.on('SIGINT', () => process.exit(0));
