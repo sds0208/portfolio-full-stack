@@ -2,11 +2,12 @@
   "name": "portfolio-full-stack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js & npm run scss",
-    "scss": "rm public/css/* & sass --watch scss/main.scss public/css/main.css"
+    "scss": "rm public/css/* & sass --watch scss/main.scss public/css/main.css",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
