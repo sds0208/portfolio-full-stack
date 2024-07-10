@@ -1,5 +1,7 @@
 #hero {
+  padding-top: $space-large;
   margin-top: $space-xl;
+  margin-bottom: 0;
   animation: fade-in 1500ms;
 
   @keyframes fade-in {
@@ -29,7 +31,6 @@
     }
 
     .blinking-cursor {
-      // color: transparent;
       animation: 1s blink 500ms step-end infinite;
     }
   }
@@ -40,6 +41,7 @@
 
   .headshot-img {
     margin-right: $space-medium;
+    // width: 50%;
   }
 
   .img-background {
@@ -59,7 +61,6 @@
   @include mobile {
     .hero-main {
       flex-direction: column;
-      // text-align: center;
     }
   }
 }

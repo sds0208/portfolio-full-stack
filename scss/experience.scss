@@ -1,13 +1,11 @@
 #work-experience {
+  padding-top: $space-xl;
   margin-bottom: $space-xl + $space-large;
+  margin-top: 0;
 
   .experience-blocks {
     min-width: 100%;
     flex-wrap: wrap;
-
-    .experience-wrapper {
-      width: 100%;
-    }
 
     &.expanded {
       .experience-block {
@@ -99,11 +97,18 @@
       }
 
       &:not(.expanded) {
-          p.job-dates,
+
+          p.job-dates {
+            display: none;
+          }
+
           ul.job-list-items {
-            height: 0;
-            margin: 0;
-            opacity: 0;
+              height: 0;
+              margin: 0;
+
+              li {
+                display: none;
+              }
           }
       }
   

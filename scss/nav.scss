@@ -1,15 +1,27 @@
 nav {
   background: $med-dark-color;
   padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 255, 255, 0.4);
+  z-index: 100;
 
   #nav-logo {
-    // font-family: 'Rock Salt', 'cursive';
-    font-family: monospace;
-    font-size: 28px;
-
-    .highlight {
-      // font-size: 44px;
+    a {
       font-family: monospace;
+      font-size: 28px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 500ms;
+
+      &:hover {
+        color: $light-color;
+      }
+
+      .highlight {
+        font-family: monospace;
+      }
     }
   }
 
@@ -24,7 +36,7 @@ nav {
     }
   }
 
-  @include mobile {
+  @include tablet {
     .hamburger {
       position: absolute;
       right: 40px;

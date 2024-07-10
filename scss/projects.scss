@@ -1,21 +1,5 @@
 #projects, .project-page-wrapper {
 
-    &#projects {
-    
-        .project-container {
-    
-            .project-blocks {
-        
-              	.project-block {
-                
-                	.link-group {
-                  		display: none;
-                	}
-              	}
-            }
-        }
-    }
-
     margin-top: 0;
 
     .project-container {
@@ -131,6 +115,13 @@
                         display: block;
                         order: 6;
                     }
+                }
+
+                a {
+                    color: $light-color;
+                    margin-right: $space-small;
+                    line-height: 1.5em;
+                    white-space: nowrap;
                 }
             }
 

@@ -6,31 +6,34 @@
   <title>Sarah Santa Cruz - Full Stack Engineer</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <%- include('./partials/sections/nav', {'page':'home'}); %>
+  <%- include('./partials/sections/nav'); %>
   <section id="hero">
     <%- include('./partials/sections/hero'); %>
   </section>
-  <section id="homepage-blurb">
+  <section id="about">
     <%- include('./partials/sections/blurb'); %>
   </section>
   <section id="work-experience">
     <%- include('./partials/sections/experience', {experienceData: experienceData}); %>
+    <div id="skills"></div>
   </section>
-  <section id="skills">
+  <section id="skills-banner">
     <%- include('./partials/sections/skills'); %>
   </section>
-  <!-- <section id="visual-element">
-    An interesting visual element will go here...
-  </section> -->
   <section id="projects">
-    <%- include('./partials/sections/projects', {projectData: projectData, page: 'home'}); %>
+    <%- include('./partials/sections/projects', {projectData: projectData}); %>
   </section>
   <section id="contact">
     <%- include('./partials/sections/contact'); %>
   </section>
+  <section id="footer">
+    <%- include('./partials/sections/footer'); %>
+  </section>
+  <script src="js/nav.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/analytics.js"></script>
 </body>
 </html>

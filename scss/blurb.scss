@@ -1,10 +1,10 @@
-#homepage-blurb {
+#about {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: $space-xl;
 
     .blurb-container {
-        // margin-left: -100vw;
-        // animation: 2s slide-right 1s ease-in-out forwards;
         width: 100%;
-
         animation: fade-in 1500ms;
     }
 

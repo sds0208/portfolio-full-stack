@@ -8,7 +8,7 @@
             <div class="description-background"></div>
             <p><%= item.description %></p>
         </div>
-        <a class="button-wrapper lg-screen" href="/projects"><button class="learn-more">More Details</button></a>
+        <!-- <a class="button-wrapper lg-screen" href="/projects"><button class="learn-more">More Details</button></a> -->
         <div class="link-group lg-screen">
             <% for (linkObj of item.links) { %>
                 <a href="<%= linkObj.url %>" target="_blank"><%= linkObj.name %></a>
@@ -19,7 +19,7 @@
         <img class="project-img" src="<%=`images/${item.imgPath}`%>" alt="project screenshot">
     </div>
     <div class="img-background"></div>
-    <a class="button-wrapper sm-screen" href="/projects"><button class="learn-more">More Details</button></a>
+    <!-- <a class="button-wrapper sm-screen" href="/projects"><button class="learn-more">More Details</button></a> -->
     <div class="link-group sm-screen">
         <% for (linkObj of item.links) { %>
             <a href="<%= linkObj.url %>" target="_blank"><%= linkObj.name %></a>

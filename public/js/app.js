@@ -1,9 +1,3 @@
-// document.querySelector('.hamburger')
-//   .addEventListener('click', (e) => {
-//     e.currentTarget.closest('nav').classList.toggle('open');
-//     document.body.classList.toggle('mobile-nav-open');
-//   });
-
 // Hero typing animation
 const fullStr = `Hello! I'm <span class="highlight">Sarah Santa Cruz</span>. <span class="blinking-cursor">|</span>`;
 const highlightStr = '<span class="highlight"></span>';

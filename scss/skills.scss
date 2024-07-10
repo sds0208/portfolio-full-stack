@@ -1,4 +1,4 @@
-#skills {
+#skills-banner {
     padding: 0;
     max-width: unset;
     position: relative;
@@ -45,11 +45,11 @@
         }
 
         &.scroll-1 {
-            animation: loop-1 30s linear infinite;
+            animation: loop-1 20s linear infinite;
         }
 
         &.scroll-2 {
-            animation: loop-2 30s linear infinite;
+            animation: loop-2 20s linear infinite;
             transform: translateX(100%);
         }
     }

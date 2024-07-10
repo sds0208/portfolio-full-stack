@@ -1,20 +1,15 @@
 <nav class="flex-space-between-row">
-  <div id="nav-logo" class="link"><span class="highlight">{</span> dev: ssc <span class="highlight">}</span></div>
+  <div id="nav-logo" class="link"><a href="#"><span class="highlight">{</span> ssc: dev <span class="highlight">}</span></a></div>
   <div class="hamburger">
     <div class="hamburger-line line-1"></div>
     <div class="hamburger-line line-2"></div>
     <div class="hamburger-line line-3"></div>
   </div>
   <div class="nav-links">
-    <a href="/" class="link nav-link <%- page === 'home' ? 'selected' : '' %>">Home</a>
-    <a href="/about" class="link nav-link <%- page === 'about' ? 'selected' : '' %>">About</a>
-    <a href="/projects" class="link nav-link <%- page === 'projects' ? 'selected' : '' %>">Projects</a>
+    <a href="#about" class="link nav-link">About</a>
+    <a href="#work-experience" class="link nav-link">Experience</a>
+    <a href="#skills" class="link nav-link">Skills</a>
+    <a href="#projects" class="link nav-link">Projects</a>
+    <a href="#contact" class="link nav-link">Contact</a>
   </div>
 </nav> 
-<script>
-  document.querySelector('.hamburger')
-    .addEventListener('click', (e) => {
-      e.currentTarget.closest('nav').classList.toggle('open');
-      document.body.classList.toggle('mobile-nav-open');
-  });
-</script>

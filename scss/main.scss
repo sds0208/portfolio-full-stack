@@ -1,5 +1,16 @@
 @import 'base';
 @import 'nav';
+@import 'hero';
+@import 'blurb';
+@import 'experience';
+@import 'skills';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   font-family: 'Josefin Sans', sans-serif;
