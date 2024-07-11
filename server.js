@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 app.post('/analytics/view', async (req, res) => {
   try {
     viewId = await createNewRow();
-    res.send('View count incremented');
+    res.send(`viewId = ${viewId}`);
   } catch (error) {
     console.error(error);
   }
@@ -42,9 +42,9 @@ app.post('/analytics/click', async (req, res) => {
     if (viewId && clickNum < 11 && req?.body?.text) {
       await addClick(viewId, clickNum, req.body.text);
       clickNum++;
-      res.send('Click data sent');
+      res.send(`Click data sent. viewId = ${viewId}, clickNum = ${clickNum - 1}, text = ${req.body.text}`);
     } else {
-      res.send('Click data not sent. This could be due to a max number of clicks being reached.')
+      res.send(`Click data not sent. viewId = ${viewId}, clickNum = ${clickNum}, text = ${req.body.text}`)
     }
   } catch (error) {
     console.error(error);

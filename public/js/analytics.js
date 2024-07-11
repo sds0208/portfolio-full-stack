@@ -13,7 +13,6 @@ document.querySelectorAll('a, .experience-caret').forEach(item => {
     } else {
       dataString = `Link Click - ${item.textContent.trim()}`;
     }
-    console.log(dataString);
     sendClickData(dataString);
   });
 });
@@ -28,7 +27,7 @@ async function incrementPageView() {
       },
       body: JSON.stringify({ count: 1 })
     });
-    console.log(res);
+    return res;
   } catch (error) {
     console.error(error);
   }
@@ -36,7 +35,6 @@ async function incrementPageView() {
 }
 
 async function sendClickData(dataString) {
-  console.log(JSON.stringify({ text: dataString }));
   try {
     const res = await fetch('/analytics/click', {
       method: 'POST',
@@ -45,7 +43,7 @@ async function sendClickData(dataString) {
       },
       body: JSON.stringify({ text: dataString })
     });
-    console.log(res);
+    return res;
   } catch (error) {
     console.error(error);
   }
